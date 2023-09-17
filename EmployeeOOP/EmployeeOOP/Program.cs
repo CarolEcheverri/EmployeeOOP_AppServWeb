@@ -5,9 +5,9 @@ try
     //Declaración de variables
     int day, month, year;
     string firstName, lastName;
-    decimal salary, sales, baseS;
+    decimal salary, sales, baseS, hoursValue;
     double commissionPercentage;
-
+    int hours; 
  
 
 
@@ -98,6 +98,29 @@ try
     };
 
     Console.WriteLine(baseCommissionEmployee + "\n");
+
+
+    //Clase HourlyEmployee
+
+    Console.Write("Ingresar cantidad de horas: \n");
+    hours = Convert.ToInt32(Console.ReadLine());
+
+    Console.Write("Ingresar valor por hora: \n");
+    hoursValue = Decimal.Parse(Console.ReadLine());
+
+    HourlyEmployee hourlyEmployee = new HourlyEmployee()
+    {
+        Id = 123456,
+        FirstName = firstName,
+        LastName = lastName,
+        BirthDate = dateObject,
+        HiringDate = dateObject,
+        IsActive = true,
+        Hours = hours,
+        HoursValue = hoursValue,
+    };
+
+    Console.WriteLine(hourlyEmployee + "\n");
 
 
 }
