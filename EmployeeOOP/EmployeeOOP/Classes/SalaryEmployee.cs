@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeOOP.Classes
 {
-    internal class SalaryEmployee : Employee
+    public class SalaryEmployee : Employee
     {
         #region Properties
 
